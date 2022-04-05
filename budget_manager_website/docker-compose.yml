@@ -1,0 +1,32 @@
+version: '2.4'
+
+services:
+  nginx: 
+    image: nginx
+    container_name: budget_manager-nginx
+    depends_on:
+        - app
+    ports:
+        - 80:80
+    volumes:
+        - ./nginx-app.conf:/etc/nginx/conf.d/default.conf
+  app:
+    build: ./
+    container_name: budget_manager-app
+    command: gunicorn app:app --bind :8080 --workers 5
+    depends_on:
+      - db
+    environment:
+      - MONGO_HOST=db:27017
+    volumes:
+        - ./app:/app:ro
+  db:
+    image: mongo
+    container_name: budget_manager-mongo
+
+    # uncomment this for local testing
+    # ports:
+    #     - 127.0.0.1:27017:27017
+
+    # volumes:
+    #   - ./data:/data/db

@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<br><h2 align="center">Hello, <a style="background-color:#FF8C00; color:black; text-decoration:none">{{ username }}</a>! <br> Your current Budget:</h2>
+
+<div class="container2">
+     <!-- <input align="center" type="text" id="curbudg" value="" /> -->
+    <div class="income-expense">
+        <div>
+            <h4 class="balancers">Inflow</h4>
+            <p class="income" id="income">{{ income }}₽</p>
+        </div>
+        <div>
+            <h4 class="balancers">Outflow</h4>
+            <p class="expense" id="expense">{{ outcome }}₽</p>
+        </div>
+        <div>
+            <h4 class="balancers">Balance</h4>
+            <p id="balance">{{ income - outcome }}₽</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+

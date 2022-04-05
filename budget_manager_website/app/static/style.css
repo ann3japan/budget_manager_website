@@ -1,0 +1,199 @@
+h1{
+    color: rgb(0, 0, 0);
+}
+::selection {
+  background: #FF8C00;
+}
+
+/* AddExpenses style begin */
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #FFFFFF
+}
+.navbar {
+  padding-top:1%;
+  font-size: 20pt;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.title2 {
+  /* opacity: 0.8; */
+  text-align: center;
+  border-radius: 1rem;
+  color: #000000
+}
+
+.container2 {
+  padding: 30px 40px;
+  border-radius: 1rem;
+  border: 3px solid white;
+  margin-top: 20px;
+  margin-right: 400px;
+  margin-left: 400px;
+  /* width: 350px; */
+  /* background-color: #91abdb */
+}
+
+h1 {
+  letter-spacing: 2px;
+  margin: 0;
+  margin: 10px 0 10px;
+}
+
+h3 {
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #000000
+}
+
+.income-expense {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 1rem;
+  /* box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685),
+    0 5px 6px rgba(58, 73, 80, 0.685); */
+  border: 4px solid #5b84c4;
+
+  }
+
+.income-expense > div {
+  flex: 1;
+  text-align: center;
+}
+
+.income,
+.expense,
+#balance {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+.income {
+  color: #FF8C00;
+}
+.expense {
+  color: #11224d;
+}
+#balance {
+  color: #193a6f;
+}
+.bg-dark {
+  background-color: black;
+  margin: 0 2px;
+
+  border-radius: 3px;
+}
+
+#login,
+#password,
+#password_retype,
+#title,
+#description,
+#amount,
+#outcome_category,
+#income_category,
+input[type="number"] {
+  border: 1px solid silver;
+  border-radius: 1rem;
+
+  padding: 5px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #999999
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+  margin-top: 30px;
+  /* font-weight: bolder; */
+}
+
+/* .btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 8px 0;
+  border-radius: 1rem;
+  outline: none;
+  background-color: #193a6f;
+  color: whitesmoke;
+  letter-spacing: 3px;
+  font-size: 16px;
+
+}
+.btn:hover {
+  color: #193a6f;
+  background-color: #FF8C00; 
+}*/
+
+.btn {
+  display: inline-block;
+  border-radius: 1rem;
+  background-color: #193a6f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 100%;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#text2:focus,
+#amount2:focus {
+  width: 110%;
+  transition: 0.5s;
+  border-bottom: 2px solid #193a6f;
+  border-right: 2px solid #193a6f;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+
+.fa {
+  color: #193a6f;
+}
+.fa:hover {
+  transform: rotate(20deg);
+}
+
+#error_msg {
+  color: #FF8C00;
+  background-color: #fb9f50;
+  font-weight: bolder;
+  padding: 0 10px;
+  border-radius: 1rem;
+}
+
+a.navbar-links {
+  font-size: 16px;
+  color: #999999;
+}
+.history-outcome {
+  color: #193A6F;
+}
+.history-income {
+  color: #FF8C00;
+}

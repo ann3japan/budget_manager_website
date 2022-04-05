@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+
+    <h1 align="center" >Login &#x1F512;</h1>
+    <p align="center" >Please fill in this form to login.</p>
+    {{ wtf.quick_form(form) }}
+    <br>
+{% endblock %}
