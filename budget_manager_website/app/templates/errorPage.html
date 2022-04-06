@@ -1,0 +1,12 @@
+<!-- {% extends "base.html" %} -->
+{% block styles %}
+  {{super()}}
+  <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
+{% endblock %}
+
+
+<div class="row-container">
+  <iframe src="https://http.cat/404.jpg" class="errorFrame"></iframe>
+</div>
+
+{% endblock %}
