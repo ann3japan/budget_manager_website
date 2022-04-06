@@ -232,7 +232,7 @@ def addOutcome():
             json.dumps(item, default=json_util.default)))
         # outcome_amount += item.get('amount')
 
-    flash('The expense line was suckassfully created!')  # NVN
+    flash('The expense line was successfully created!')  
     return redirect(url_for('addOutcome'))
 
 
