@@ -18,6 +18,7 @@
           <th data-field="prenom" scope="col" data-sortable="true">Category</th>
           <th data-field="examen" scope="col" data-sortable="true">Description</th>
           <th scope="col">Value</th>
+          <th scope="col"></th>
           </tr>
       </thead>
       <tbody>
@@ -27,6 +28,7 @@
           <td>{{ history_entry.get('category') }}</td>
           <td>{{ history_entry.get('description') }}</td>
           <td>{{ history_entry.get('amount') }}</td>
+          <td><a href="{{ '/delete/' + history_entry.get('type') + '/' + history_entry.get('_id') }}">Delete</a></td>
       </tr>
   {% endfor %}
   </tbody>
