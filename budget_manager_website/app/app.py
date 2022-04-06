@@ -139,7 +139,6 @@ def addIncome():
     income_list = []
 
     if request.method == "GET":
-
         try:
             show_amount = int(request.args.get('show'))
         except:
@@ -157,7 +156,7 @@ def addIncome():
         # , scroll=True)
         return render_template('addIncome.html', form=form, income=income_amount, income_entries=income_list, show_next=show_amount+5, show_before=show_amount-5)
 
-    # NVN ->
+    
     # description = form.description.data
     # amount = form.amount.data
     # expense = mongo.db.budget.insert_one({
@@ -166,8 +165,8 @@ def addIncome():
     #     "amount": amount
     # })
     # return redirect(url_for('index'))
-    # NVN <-
 
+    
     income_category = form.income_category.data
     description = form.description.data
     amount = form.amount.data
