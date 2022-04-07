@@ -27,4 +27,4 @@
 
 Docker-compose exposes port 80 of Nginx and nginx proxies all requests to the app container.
 
-To deploy the app run `docker-compose up -d` or visit it [here](https://budget.manager.z37yc.com/)
+To deploy the app run `docker-compose up -d`.
