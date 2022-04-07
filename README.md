@@ -17,7 +17,7 @@
 
 ### Technology stack  
 
-* Python3(flask, jinja2)
+* Python3 (flask, jinja2)
 * MongoDB
 * Nginx
 * Docker
